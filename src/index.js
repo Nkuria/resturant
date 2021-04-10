@@ -1,3 +1,4 @@
+import homeFood from './images/home-food.jpg';
 const body = document.getElementById('content');
 function navigation () {
     // const body = document.getElementById('content');
@@ -56,15 +57,14 @@ function homePage() {
     leftHome.appendChild(menuBtn);
     menuBtn.innerHTML = "Discover Menu";
     }
-    leftGrid();
-
     function rightGrid() {
 
         const rightHome = document.createElement('img');
         mainContainer.appendChild(rightHome);
         rightHome.classList.add('right-home');
-        rightHome.setAttribute('src', './home-food.jpg');
+        rightHome.src = homeFood;
     }
+leftGrid();
 rightGrid();
 }
 navigation();

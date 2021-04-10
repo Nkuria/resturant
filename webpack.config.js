@@ -12,4 +12,20 @@ module.exports = {
     poll: 1000,
     ignored: /node_modules/,
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+
+     {
+
+       test: /\.(png|svg|jpg|jpeg|gif)$/i,
+
+       type: 'asset/resource',
+
+     },
+    ],
+  },
 };
