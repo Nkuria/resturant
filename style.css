@@ -3,6 +3,12 @@
     font-family: 'Overpass', sans-serif;
     box-sizing: border-box;
 }
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+  }
 a:hover {
     color: grey;
     cursor: pointer;
@@ -26,7 +32,7 @@ a:hover {
 }
 .left-home {
     margin: auto;
-    padding-top: 35%;
+    padding-top: 10%;
     width: 60%;
 }
 .left-home p {
