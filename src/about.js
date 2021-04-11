@@ -13,7 +13,7 @@ function aboutPage(body) {
   const aboutPar = document.createElement('p');
   aboutPar.classList.add('about-par');
   const aboutParText = document.createTextNode(
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia lobortis magna quis pulvinar. Maecenas eleifend lectus vitae lobortis auctor. Fusce lorem orci, blandit a euismod sit amet, hendrerit in nunc. Suspendisse potenti. Nulla ac dui mauris. Pellentesque at nulla sed enim iaculis semper. Quisque vitae sodales tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer non neque id turpis scelerisque sagittis sit amet sed turpis. Maecenas at fermentum orci. Sed augue urna, congue at tellus sed, auctor pretium nisi. Curabitur venenatis ante hendrerit odio efficitur, vitae auctor justo lobortis. Ut lacinia venenatis dapibus. Nam eget ullamcorper. '
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia lobortis magna quis pulvinar. Maecenas eleifend lectus vitae lobortis auctor. Fusce lorem orci, blandit a euismod sit amet, hendrerit in nunc. Suspendisse potenti. Nulla ac dui mauris. Pellentesque at nulla sed enim iaculis semper. Quisque vitae sodales tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer non neque id turpis scelerisque sagittis sit amet sed turpis. Maecenas at fermentum orci. Sed augue urna, congue at tellus sed, auctor pretium nisi. Curabitur venenatis ante hendrerit odio efficitur, vitae auctor justo lobortis. Ut lacinia venenatis dapibus. Nam eget ullamcorper. ',
   );
   aboutPar.appendChild(aboutParText);
   aboutContainer.appendChild(aboutPar);

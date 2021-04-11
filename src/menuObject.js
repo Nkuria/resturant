@@ -18,4 +18,6 @@ const salads = [
   { name: 'Icecream Cake', ingredients: 'cake + IceCream', price: 'KSH 400' },
   { name: 'Icecream Cake', ingredients: 'cake + IceCream', price: 'KSH 400' },
 ];
-export { mainFood, salads, drinks, deserts };
+export {
+  mainFood, salads, drinks, deserts,
+};

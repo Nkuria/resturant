@@ -39,12 +39,12 @@ function menuPage(body) {
       MainFoodHeader.appendChild(MainFoodHeaderText);
       leftMenu.appendChild(MainFoodHeader);
 
-      for (let i = 0; i < salads.length; i+=1) {
+      for (let i = 0; i < salads.length; i += 1) {
         const saladName = document.createElement('p');
         const saladNameText = document.createTextNode(
-          mainFood[i].name +
-            '...................................................' +
-            mainFood[i].price
+          `${mainFood[i].name
+          }...................................................${
+            mainFood[i].price}`,
         );
         saladName.classList.add('salad-name');
         saladName.appendChild(saladNameText);
@@ -65,12 +65,12 @@ function menuPage(body) {
       MainFoodHeader.appendChild(MainFoodHeaderText);
       leftMenu.appendChild(MainFoodHeader);
 
-      for (let i = 0; i < salads.length; i+=1) {
+      for (let i = 0; i < salads.length; i += 1) {
         const saladName = document.createElement('p');
         const saladNameText = document.createTextNode(
-          deserts[i].name +
-            '...................................................' +
-            deserts[i].price
+          `${deserts[i].name
+          }...................................................${
+            deserts[i].price}`,
         );
         saladName.classList.add('salad-name');
         saladName.appendChild(saladNameText);
@@ -95,12 +95,12 @@ function menuPage(body) {
       MainFoodHeader.appendChild(MainFoodHeaderText);
       rightMenu.appendChild(MainFoodHeader);
 
-      for (let i = 0; i < salads.length; i++) {
+      for (let i = 0; i < salads.length; i += 1) {
         const saladName = document.createElement('p');
         const saladNameText = document.createTextNode(
-          drinks[i].name +
-            '...................................................' +
-            drinks[i].price
+          `${drinks[i].name
+          }...................................................${
+            drinks[i].price}`,
         );
         saladName.classList.add('salad-name');
         saladName.appendChild(saladNameText);
@@ -121,12 +121,12 @@ function menuPage(body) {
       MainFoodHeader.appendChild(MainFoodHeaderText);
       rightMenu.appendChild(MainFoodHeader);
 
-      for (let i = 0; i < salads.length; i++) {
+      for (let i = 0; i < salads.length; i += 1) {
         const saladName = document.createElement('p');
         const saladNameText = document.createTextNode(
-          salads[i].name +
-            '...................................................' +
-            salads[i].price
+          `${salads[i].name
+          }...................................................${
+            salads[i].price}`,
         );
         saladName.classList.add('salad-name');
         saladName.appendChild(saladNameText);
