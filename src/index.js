@@ -1,4 +1,4 @@
-import homeFood from './images/home-food.jpg';
+import homeFood from './assets/images/home-food.jpg';
 const body = document.getElementById('content');
 function navigation () {
     // const body = document.getElementById('content');
@@ -24,12 +24,16 @@ function navigation () {
     contactLink.appendChild(contactLinkText);
     navBar.appendChild(contactLink);
 
+    homeLink.addEventListener('click', () => {
+        body.innerHTML = " ";
+        navigation();
+        homePage();
+    }  );
+    contactLink.addEventListener('click', () => {console.log("hello")}  );
     contactLink.addEventListener('click', () => {console.log("hello")}  );
 
 }
-// function newElem(name, element) {
-//     const name = document.createElement(element);
-// }
+
 function homePage() {
     const mainContainer = document.createElement('div');
     mainContainer.classList.add("main-container-home");
