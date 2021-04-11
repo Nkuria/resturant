@@ -10,9 +10,9 @@ Is a simple restaurant Website
 
 This project is a simple restaurant page. It uses JavaScript to render all the DOM elements with the html file containing only the basic skeleton tags, i.e. html, title, body and a single div.
 
-![screenshot]('/src/assets/images/capture1.png')
+![screenshot]('./src/assets/images/capture1.png')
 -
-![screenshot]('/src/assets/images/capture2.png')
+![screenshot]('./src/assets/images/capture2.png')
 
 The DOM Elements are build mainly from JS:
 
