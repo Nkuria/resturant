@@ -56,11 +56,80 @@ a:hover {
     background-color: #072AC8;
     color: white;
     font-size: 15px;
-   
+}
+.menu-btn:hover {
+    cursor: pointer;
 }
 
 .right-home {
     height: 87vh;
     width: 100%;
     
+}
+
+/* Menu page styling */
+
+.menu-container {
+    width: 70%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.menu-header {
+    font-size: 30px;
+    text-align: center;
+    border-bottom-style: dashed;
+    border-bottom-color: #072AC8;
+
+
+}
+.menu-header2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.food-header {
+    color: #072AC8;
+    font-size: 25px;
+}
+.salad-ing {
+    color: gray;
+    font-size: 12px;
+}
+
+/* about page styling */
+
+.about-container {
+    height: 100%;
+    position: relative;
+}
+
+.back-img {
+    height: 100%;
+}
+
+.about-par {
+   position: absolute;
+   top: 15%;
+   width: 50%;
+   left: 25%;
+   text-align: center;
+   font-size: 17px;
+   line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .food-container {
+        display: block;
+    }
+    .main-container-home {
+        display: block;
+    }
 }
