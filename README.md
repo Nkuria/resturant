@@ -28,7 +28,7 @@ The DOM Elements are build mainly from JS:
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link]('https://nkuria.github.io/resturant/')
 
 
 ## Getting Started
