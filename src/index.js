@@ -1,6 +1,7 @@
 import homeFood from './assets/images/home-food.jpg';
-import { menuPage } from './menu';
-import { aboutPage } from './about';
+import menuPage  from './menu';
+import aboutPage  from './about';
+
 const body = document.getElementById('content');
 
 function navigation() {
@@ -30,7 +31,7 @@ function navigation() {
   homeLink.addEventListener('click', () => {
     body.innerHTML = ' ';
     navigation();
-    homePage();
+    homePage();  // eslint-disable-line no-use-before-define
   });
   menuLink.addEventListener('click', () => {
     body.innerHTML = ' ';

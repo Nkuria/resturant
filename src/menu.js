@@ -1,8 +1,8 @@
 import {
-  mainFood as mainFood,
-  salads as salads,
-  drinks as drinks,
-  deserts as deserts,
+  mainFood,
+  salads,
+  drinks,
+  deserts,
 } from './menuObject';
 
 function menuPage(body) {
@@ -39,7 +39,7 @@ function menuPage(body) {
       MainFoodHeader.appendChild(MainFoodHeaderText);
       leftMenu.appendChild(MainFoodHeader);
 
-      for (let i = 0; i < salads.length; i++) {
+      for (let i = 0; i < salads.length; i+=1) {
         const saladName = document.createElement('p');
         const saladNameText = document.createTextNode(
           mainFood[i].name +
@@ -65,19 +65,19 @@ function menuPage(body) {
       MainFoodHeader.appendChild(MainFoodHeaderText);
       leftMenu.appendChild(MainFoodHeader);
 
-      for (let i = 0; i < salads.length; i++) {
+      for (let i = 0; i < salads.length; i+=1) {
         const saladName = document.createElement('p');
         const saladNameText = document.createTextNode(
-          salads[i].name +
+          deserts[i].name +
             '...................................................' +
-            salads[i].price
+            deserts[i].price
         );
         saladName.classList.add('salad-name');
         saladName.appendChild(saladNameText);
         leftMenu.appendChild(saladName);
 
         const saladIng = document.createElement('p');
-        const saladIngText = document.createTextNode(salads[i].ingredients);
+        const saladIngText = document.createTextNode(deserts[i].ingredients);
         saladIng.classList.add('salad-ing');
         saladIng.appendChild(saladIngText);
         leftMenu.appendChild(saladIng);
@@ -98,16 +98,16 @@ function menuPage(body) {
       for (let i = 0; i < salads.length; i++) {
         const saladName = document.createElement('p');
         const saladNameText = document.createTextNode(
-          salads[i].name +
+          drinks[i].name +
             '...................................................' +
-            salads[i].price
+            drinks[i].price
         );
         saladName.classList.add('salad-name');
         saladName.appendChild(saladNameText);
         rightMenu.appendChild(saladName);
 
         const saladIng = document.createElement('p');
-        const saladIngText = document.createTextNode(salads[i].ingredients);
+        const saladIngText = document.createTextNode(drinks[i].ingredients);
         saladIng.classList.add('salad-ing');
         saladIng.appendChild(saladIngText);
         rightMenu.appendChild(saladIng);
@@ -147,4 +147,4 @@ function menuPage(body) {
   }
   foodLoops();
 }
-export { menuPage };
+export { menuPage as default };

@@ -1,4 +1,5 @@
 import tableImge from './assets/images/pexels-ella-olsson-1640777.jpg';
+
 function aboutPage(body) {
   const aboutContainer = document.createElement('div');
   body.appendChild(aboutContainer);
@@ -17,4 +18,4 @@ function aboutPage(body) {
   aboutPar.appendChild(aboutParText);
   aboutContainer.appendChild(aboutPar);
 }
-export { aboutPage };
+export { aboutPage as default };
