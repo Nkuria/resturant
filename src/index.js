@@ -1,4 +1,6 @@
 import homeFood from './assets/images/home-food.jpg';
+import {menuPage} from './menu';
+import {aboutPage} from './about';
 const body = document.getElementById('content');
 function navigation () {
     // const body = document.getElementById('content');
@@ -20,7 +22,7 @@ function navigation () {
 
     const contactLink = document.createElement('a');
     contactLink.classList.add('nav-link');
-    const contactLinkText = document.createTextNode("Contact");
+    const contactLinkText = document.createTextNode("About");
     contactLink.appendChild(contactLinkText);
     navBar.appendChild(contactLink);
 
@@ -29,8 +31,16 @@ function navigation () {
         navigation();
         homePage();
     }  );
-    contactLink.addEventListener('click', () => {console.log("hello")}  );
-    contactLink.addEventListener('click', () => {console.log("hello")}  );
+    menuLink.addEventListener('click', () => {
+        body.innerHTML = " ";
+        navigation();
+        menuPage(body);
+    }  );
+    contactLink.addEventListener('click', () => {
+        body.innerHTML = " ";
+        navigation();
+        aboutPage(body);
+    }  );
 
 }
 
@@ -60,6 +70,11 @@ function homePage() {
     menuBtn.classList.add('menu-btn');
     leftHome.appendChild(menuBtn);
     menuBtn.innerHTML = "Discover Menu";
+    menuBtn.addEventListener('click', () => {
+        body.innerHTML = " ";
+        navigation();
+        menuPage(body);
+    }  );
     }
     function rightGrid() {
 
